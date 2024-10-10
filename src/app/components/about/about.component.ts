@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, OnDestroy, ViewChild, ElementRef} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { HeaderComponent } from "../../shared/header/header.component";
 import { FooterComponent } from "../../shared/footer/footer.component";
 import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
