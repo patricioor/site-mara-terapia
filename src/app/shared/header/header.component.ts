@@ -46,7 +46,7 @@ export class HeaderComponent {
   @Input() serviceTravasMentaisBtnText: string = "";
   @Input() serviceHipnoterapiaBtnText: string = "";
 
-  @Output("navigate") onNavigate = new EventEmitter();
+  @Output('navigate') onNavigate = new EventEmitter();
   isMenuOpen = false;
   isAboutPage: boolean = true;
   isFixed: boolean = false;
@@ -62,9 +62,9 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    const headerPosition = this.header.nativeElement.offsetTop;
+    const headerPosition = 935;
 
-    const scrollPosition = window.pageYOffset ||
+    const scrollPosition =
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       window.scrollY;
