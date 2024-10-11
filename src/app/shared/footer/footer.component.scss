@@ -1,5 +1,4 @@
 main {
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 10;
   margin: 0 auto;
@@ -51,7 +50,7 @@ main {
     width: 100%;
     div {
       flex-grow: 1;
-      height: 2px;
+      height: 3px;
     }
   }
 }
