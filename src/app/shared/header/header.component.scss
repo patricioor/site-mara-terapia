@@ -65,9 +65,9 @@
       position: relative;
       width: 100%;
       box-sizing: border-box;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
       height: 5rem;
       z-index: 10;
+      background-color: #f0e6df;
 
       section {
         .desktop-menu {
@@ -79,6 +79,7 @@
           gap: 35rem;
           background-color: #dbaca3;
           height: 5rem;
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 
           img {
             height: 70px;
