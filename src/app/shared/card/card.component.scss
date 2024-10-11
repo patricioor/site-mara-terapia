@@ -4,13 +4,14 @@
     width: auto;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0.5rem;
 
     button {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 5px;
       border: 2px solid #dbaca3;
       border-radius: 50%;
       background-color: #f0e6df;
