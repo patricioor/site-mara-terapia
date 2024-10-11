@@ -28,7 +28,6 @@ main {
         height: 25px;
         width: 25px;
         background-color: #dbaca3;
-
       }
     }
     p{
@@ -46,10 +45,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f0e6df;
     width: 100%;
     div {
       flex-grow: 1;
-      height: 3px;
+      height: 1px;
     }
   }
 }

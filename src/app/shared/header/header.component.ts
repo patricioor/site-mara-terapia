@@ -91,7 +91,7 @@ export class HeaderComponent {
           break;
 
         case 'about':
-          this.router.navigate(['/about']);
+          this.router.navigate(['/about#about']);
           break;
 
         case 'services':

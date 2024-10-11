@@ -5,6 +5,7 @@ import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 import { CardComponent } from "../../shared/card/card.component";
 import { filter } from "rxjs";
 import { Subscription } from "rxjs";
+import {CardTestimonialComponent} from "../../shared/card-testimonial/card-testimonial.component";
 
 @Component({
   selector: 'app-about',
@@ -12,7 +13,8 @@ import { Subscription } from "rxjs";
   imports: [
     HeaderComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    CardTestimonialComponent
   ],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']

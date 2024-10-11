@@ -290,10 +290,22 @@
     align-items: center;
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
     background-color: #f0e6df;
-    padding-inline: 3rem;
+    padding-inline: 6rem;
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0e6df;
+      width: 70%;
+
+      div {
+        flex-grow: 1;
+        height: 1px;
+      }
+    }
 
     .apresentation-section {
       display: flex;
@@ -303,7 +315,7 @@
       align-items: center;
       text-align: center;
       color: #dbaca3;
-      padding-top: 3rem;
+      padding-top: 6rem;
 
       .h2-mobile{
         display: none;
@@ -511,6 +523,12 @@
         }
       }
     }
+  }
+  .divider-main{
+    height: 3rem;
+    background-color: #f0e6df;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
