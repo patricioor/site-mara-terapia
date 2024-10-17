@@ -7,19 +7,16 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
     section {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       .mobile-menu {
         display: flex;
-        width: 100%;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -57,38 +54,45 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
 }
 
 @media (min-width: 1024px) {
-    header {
-      position: relative;
-      width: 100%;
-      box-sizing: border-box;
-      height: 5rem;
-      z-index: 10;
-      background-color: #f0e6df;
+  header {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: 5rem;
+    z-index: 10;
+    background-color: #f0e6df;
 
-      section {
-        .desktop-menu {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          visibility: visible;
-          gap: 35rem;
-          background-color: #dbaca3;
-          height: 5rem;
-          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    section {
+      .desktop-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        visibility: visible;
+        gap: 35rem;
+        background-color: #dbaca3;
+        height: 5rem;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 
-          img {
-            height: 70px;
-            width: 140px;
+        img {
+          height: 70px;
+          width: 140px;
+        }
+
+        .buttons-header {
+          font-weight: 700;
+
+          button {
+            font-size: 16px;
+            background-color: #dbaca3;
+            color: #f0e6df;
+            border: 2px solid transparent;
+            transition: border 0.2s ease-in-out;
+            transition-delay: 0.3s;
           }
-
-          .buttons-header {
-            font-weight: 700;
-
             button {
               font-size: 16px;
               background-color: #dbaca3;
@@ -98,30 +102,28 @@
               transition-delay: 0.3s;
             }
 
-            button:hover {
-              border: 2px solid #f0e6df;
-              transition-delay: 0s;
-            }
+          button:hover {
+            border: 2px solid #f0e6df;
+            transition-delay: 0s;
           }
         }
-
-        .mobile-menu {
-          visibility: hidden;
-          height: 0;
-          width: 0;
-        }
       }
 
-      section.fixed{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      .mobile-menu {
+        visibility: hidden;
+        height: 0;
+        width: 0;
       }
     }
+
+    section.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
   }
-
-
+}

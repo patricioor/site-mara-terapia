@@ -102,11 +102,23 @@ export class HeaderComponent {
           this.router.navigate(['/services']);
           break;
 
-        case 'blog':
-          this.router.navigate(['/blog']);
+        case 'themes/ansiedade-e-depressao':
+          this.router.navigate(['themes/ansiedade-e-depressao']);
           break;
 
-          case 'services/trg':
+        case 'themes/autocuidado-e-autoestima':
+          this.router.navigate(['themes/autocuidado-e-autoestima']);
+          break;
+
+        case 'themes/burnout-e-sindrome-do-panico':
+          this.router.navigate(['themes/burnout-e-sindrome-do-panico']);
+          break;
+
+        case 'themes/crise-conjugal':
+          this.router.navigate(['themes/crise-conjugal']);
+          break;
+
+        case 'services/trg':
           this.router.navigate(['/services/trg']);
           break;
 
