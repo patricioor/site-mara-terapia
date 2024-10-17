@@ -49,7 +49,6 @@
 
 @media (min-width: 1024px) {
   main {
-    button {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -61,7 +60,6 @@
       height: 25rem;
       width: 17rem;
       box-sizing: border-box;
-      cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
 
       h4 {
@@ -75,20 +73,9 @@
         text-align: justify;
       }
 
-      img {
+    img {
         color: white;
         width: 3.5rem;
-        height: 3.5rem;
-      }
-    }
-
-    button:hover {
-      background-color: #e2d5c7;
-      transform: scale(1.05);
-    }
-
-    button:active {
-      transform: scale(0.95);
-    }
+        height: 3.5rem;}
   }
 }

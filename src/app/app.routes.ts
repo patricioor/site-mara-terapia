@@ -1,21 +1,25 @@
 import { Routes } from '@angular/router';
 import {AboutComponent} from "./components/about/about.component";
-import {TestimonialsComponent} from "./components/testimonials/testimonials.component";
-import {BlogComponent} from "./components/blog/blog.component";
-import {ServiceComponent} from "./components/service/service.component";
 import {TrgComponent} from "./components/service/trg/trg.component";
 import {AnaliseCorporalComponent} from "./components/service/analise-corporal/analise-corporal.component";
 import {TravasMentaisComponent} from "./components/service/travas-mentais/travas-mentais.component";
 import {HipnoterapiaComponent} from "./components/service/hipnoterapia/hipnoterapia.component";
+import {AnxietyDepressionComponent} from "./components/themes/anxiety-depression/anxiety-depression.component";
+import {
+  SelfEsteemSelfConfidenceComponent
+} from "./components/themes/self-esteem-self-confidence/self-esteem-self-confidence.component";
+import {BurnoutSyndromeComponent} from "./components/themes/burnout-syndrome/burnout-syndrome.component";
+import {MaritalCrisisComponent} from "./components/themes/marital-crisis/marital-crisis.component";
 
 export const routes: Routes = [
   { path: 'about', component: AboutComponent },
-  { path: 'services', component: ServiceComponent },
+  { path: 'themes/ansiedade-e-depressao', component: AnxietyDepressionComponent },
+  { path: 'themes/autocuidado-e-autoestima', component: SelfEsteemSelfConfidenceComponent },
+  { path: 'themes/burnout-e-sindrome-do-panico', component: BurnoutSyndromeComponent },
+  { path: 'themes/crise-conjugal', component: MaritalCrisisComponent},
   { path: 'services/trg', component: TrgComponent},
   { path: 'services/analise-corporal', component: AnaliseCorporalComponent},
   { path: 'services/travas-mentais', component: TravasMentaisComponent},
   { path: 'services/hipnoterapia', component: HipnoterapiaComponent},
-  { path: 'testimonials', component: TestimonialsComponent },
-  { path: 'blog', component: BlogComponent },
   { path: '**', redirectTo: 'about' }
 ];

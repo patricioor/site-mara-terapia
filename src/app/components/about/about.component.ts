@@ -6,6 +6,7 @@ import { CardComponent } from "../../shared/card/card.component";
 import { filter } from "rxjs";
 import { Subscription } from "rxjs";
 import {CardTestimonialComponent} from "../../shared/card-testimonial/card-testimonial.component";
+import {WhatsappButtonComponent} from "../../shared/whatsapp-button/whatsapp-button.component";
 
 @Component({
   selector: 'app-about',
@@ -14,7 +15,8 @@ import {CardTestimonialComponent} from "../../shared/card-testimonial/card-testi
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    CardTestimonialComponent
+    CardTestimonialComponent,
+    WhatsappButtonComponent
   ],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
@@ -48,10 +50,6 @@ export class AboutComponent implements OnInit {
         inline: 'nearest'
       });
     }
-  }
-
-  navigateTestimonials(): void {
-    this.router.navigate(["testimonials"]);
   }
 
   navigateService(): void {

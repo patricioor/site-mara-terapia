@@ -4,26 +4,65 @@ main {
   justify-content: center;
   align-items: center;
   color: #dbaca3;
-  .inter-container{
-    width: 80%;
-    margin-top: 2rem;
-    header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 2rem;
-    }
+  padding: 20px;
+  .section{
+    width: 70%;
+    h1{
+      padding-bottom: 1rem;
 
-    section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: justify;
-      margin-bottom: 2rem;
-      gap: 10px;
+    }
+    h2{
+      padding-bottom: 1rem;
     }
   }
+}
+
+.inter-container {
+  width: 80%;
+  margin-top: 2rem;
+  color: #dbaca3;
+}
+
+.inter-container header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  color: #dbaca3;
+}
+
+.inter-container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 2rem;
+  gap: 10px;
+  color: #dbaca3;
+}
+
+h1, h2 {
+  color: #dbaca3;
+  text-align: center;
+}
+
+ul, ol {
+  list-style-position: inside;
+  margin-left: 20px;
+  color: #dbaca3;
+}
+p {
+  text-align: justify;
+  color: #dbaca3;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ul {
+  padding-left: 20px;
 }

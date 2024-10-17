@@ -45,6 +45,10 @@ export class HeaderComponent {
   @Input() serviceAnaliseCorporalBtnText: string = "";
   @Input() serviceTravasMentaisBtnText: string = "";
   @Input() serviceHipnoterapiaBtnText: string = "";
+  @Input() themeAnxietyDepressionBtnTxt: string = "";
+  @Input() themeSelfEsteemConfidenceBtnText: string = "";
+  @Input() themeBurnoutSyndromeBtnText: string = "";
+  @Input() themeMaritalCrisisBtnText: string = "";
 
   @Output('navigate') onNavigate = new EventEmitter();
   isMenuOpen = false;
@@ -96,10 +100,6 @@ export class HeaderComponent {
 
         case 'services':
           this.router.navigate(['/services']);
-          break;
-
-        case 'testimonials':
-          this.router.navigate(['/testimonials']);
           break;
 
         case 'blog':

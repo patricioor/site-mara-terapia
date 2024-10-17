@@ -1,18 +1,7 @@
 <section id="home" class="home-section">
-  <button class="whatsapp-button">
-    <a
-      target="_blank"
-      href="https://api.whatsapp.com/send?phone=5521988249268&text=Olá, Ciomara! Vi seu site e gostaria de saber mais sobre seu trabalho."
-      rel="noopener noreferrer"
-      aria-label="Entre em contato pelo WhatsApp"
-    >
-      <img
-        src="https://img.icons8.com/?size=100&id=30448&format=png&color=000000"
-        alt="Ícone do WhatsApp"
-      />
-    </a>
-  </button>
 </section>
+<app-whatsapp-button>
+</app-whatsapp-button>
 
 <app-header
   primaryBtnText="Home"
@@ -60,13 +49,15 @@
         onde compartilho mais insights e reflexões sobre a jornada de cura emocional. Estou aqui para ajudá-lo a trilhar um caminho de transformação e bem-estar.
       </p>
       <div class="prof-section">
-        <div class="prof-name">
-          Ciomara O. Martins
-        </div>
-        <div class="prof-description">
-          Terapeuta Emocional - TRG
-          <br />
-          CITRG: 10.952
+        <div class="prof-container">
+          <div class="prof-name">
+            Ciomara O. Martins
+          </div>
+          <div class="prof-description">
+            Terapeuta Emocional - TRG
+            <br />
+            CITRG: 10.952
+          </div>
         </div>
       </div>
     </div>
@@ -79,11 +70,11 @@
       <div class="card">
         <app-card
           imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
-          title="Ansiedade"
+          title="Ansiedade e Depressão"
           description=
-            "Fortaleça sua autoestima e autoconfiança. Através de técnicas de autoconhecimento, você irá resgatar seu valor pessoal, desenvolver segurança para enfrentar desafios e viver com mais autenticidade."
+            "Clique aqui para saber mais!"
           buttonName="Clique aqui para saber mais"
-          path="services"
+          path="themes/ansiedade-e-depressao"
         >
         </app-card>
 
@@ -91,49 +82,28 @@
           imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
           title="Autoestima e Autoconfiança"
           description=
-          "Fortaleça sua autoestima e autoconfiança. Através de técnicas de autoconhecimento, você irá resgatar seu valor pessoal, desenvolver segurança para enfrentar desafios e viver com mais autenticidade."
+          "Clique aqui para saber mais!"
           buttonName="Clique aqui para saber mais"
-          path="services"
+          path="themes/autocuidado-e-autoestima"
         ></app-card>
       </div>
 
       <div class="card">
         <app-card
           imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
-          title="Burnout"
+          title="Burnout e Sindrome do Pânico"
           description=
-            "O burnout é o esgotamento emocional e físico causado pelo estresse excessivo. Nas sessões, trabalhamos juntos para identificar as causas e desenvolver estratégias para restaurar seu equilíbrio emocional."
-          buttonName="Clique aqui para saber mais"
-          path="services"
-        ></app-card>
-
-        <app-card
-          imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
-          title="Depressão"
-          description=
-            "O burnout é o esgotamento emocional e físico causado pelo estresse excessivo. Nas sessões, trabalhamos juntos para identificar as causas e desenvolver estratégias para restaurar seu equilíbrio emocional."
-          buttonName="Clique aqui para saber mais"
-          path="services"
-        ></app-card>
-      </div>
-
-      <div class="card">
-        <app-card
-          imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
-          title="Síndrome do Pânico"
-          description=
-            "A síndrome do pânico envolve crises de ansiedade intensas e inesperadas. Com técnicas de reprocessamento emocional, ajudo você a entender e gerenciar os gatilhos para melhorar sua qualidade de vida."
-          buttonName="Clique aqui para saber mais"
-          path="services"
+            "Clique aqui para saber mais!"
+          path="themes/burnout-e-sindrome-do-panico"
         ></app-card>
 
         <app-card
           imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
           title="Crise Conjugal"
           description=
-            "A crise conjugal pode distanciar casais emocionalmente. Através de sessões terapêuticas, busco criar um ambiente seguro para comunicação eficaz, resgatando a conexão e fortalecendo a relação."
+            "Clique aqui para saber mais!"
           buttonName="Clique aqui para saber mais"
-          path="services"
+          path="themes/crise-conjugal"
         ></app-card>
       </div>
     </div>
@@ -208,9 +178,8 @@
       <div class="card">
         <app-card-testimonial
           imagePath="https://img.icons8.com/?size=100&id=93331&format=png&color=dbaca3"
-          title="Maria Rita"
-          description="Eu gostei muito da terapia que fiz com a Ciomara,com certeza consegui ver muitas mudanças em mim desde quando eu comecei o tratamento. Foi uma grande oportunidade de entender como eu devo olhar para a vida de um modo menos ansioso, mais leve sem dores de traumas do passado.Acho que sinceramente todos deveriam ter essa experiência. Como me ajudou no meu preparo para o vestibular me sintindo agora mais confiante e tranquila para a prova do Enem!"
-          buttonName="Clique aqui para saber mais"
+          title="Simone"
+          description="a TRG ajuda a percepção que qdo ressignificamos os nossos traumas e fantasmas, passamos a perceber o quanto deixamos de gastar energia com o que realmente vale a pena, e mudar o foco, com a terapia eu tive auxilio para me enxergar melhor e priorizar o que realmente tem importância. para me organizar e reconhecer o meu valor e transformar fatos passados que atuavam como algum tipo de bloqueio ou impedimento de evoluir em algum campo da vida ou da própria trajetória em acontecimentos que nao vao me afetar mais nem hoje e nem no meu futuro. obrigada Ciomara por conduzir tao serenamente o processo terapeutio."
           path="testimonials"
         ></app-card-testimonial>
 
@@ -251,7 +220,7 @@
             <a
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5521988249268&text=Olá, Ciomara! Vi seu site e gostaria de saber mais sobre seu trabalho."
-            >21 98824926</a>
+            >21 988249268</a>
         </div>
         <div class="inter-container">
           <img src="https://img.icons8.com/?size=100&id=86840&format=png&color=f0e6df">
@@ -272,9 +241,6 @@
         <div class="inter-container">
           <img src="https://img.icons8.com/?size=100&id=59790&format=png&color=f0e6df">
           <span>Niterói - Rio de Janeiro</span>
-        </div>
-        <div class="inter-container">
-          <span>Plataforma: Google Meet</span>
         </div>
       </div>
       <div class="contact-container">
