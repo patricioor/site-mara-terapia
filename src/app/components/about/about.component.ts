@@ -7,6 +7,7 @@ import { filter } from "rxjs";
 import { Subscription } from "rxjs";
 import {CardTestimonialComponent} from "../../shared/card-testimonial/card-testimonial.component";
 import {WhatsappButtonComponent} from "../../shared/whatsapp-button/whatsapp-button.component";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-about',
@@ -16,7 +17,8 @@ import {WhatsappButtonComponent} from "../../shared/whatsapp-button/whatsapp-but
     FooterComponent,
     CardComponent,
     CardTestimonialComponent,
-    WhatsappButtonComponent
+    WhatsappButtonComponent,
+    NgOptimizedImage
   ],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
