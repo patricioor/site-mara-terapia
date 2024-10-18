@@ -1,12 +1,14 @@
 main {
+  padding-top: 6rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #dbaca3;
-  padding: 20px;
   .section{
-    width: 70%;
+    padding-bottom: 2rem;
+    width: 80%;
     h1{
       padding-bottom: 1rem;
 
@@ -50,19 +52,16 @@ h1, h2 {
 }
 
 ul, ol {
+  padding-top: 1rem;
+  padding-left: 20px;
   list-style-position: inside;
   margin-left: 20px;
   color: #dbaca3;
+  li{
+    padding-bottom: 0.3rem;
+  }
 }
 p {
   text-align: justify;
   color: #dbaca3;
-}
-
-ol {
-  padding-left: 20px;
-}
-
-ul {
-  padding-left: 20px;
 }

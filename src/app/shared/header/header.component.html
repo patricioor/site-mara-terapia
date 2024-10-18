@@ -45,13 +45,6 @@
       <button mat-menu-item (click)="handleButtonClick('home')" > {{ primaryBtnText }} </button>
       <button mat-menu-item (click)="handleButtonClick('about')"> {{ secondaryBtnText }} </button>
       <button mat-menu-item *ngIf="isAboutPage"  (click)="handleButtonClick('services')"> {{ tertiaryBtnText }} </button>
-      <button mat-menu-item *ngIf="!isAboutPage" [matMenuTriggerFor]="menuMobileTemas">{{ tertiaryBtnText }}</button>
-      <mat-menu #menuMobileTemas="matMenu">
-        <button mat-menu-item (click)="handleButtonClick('themes/ansiedade-e-depressao')"> {{ themeAnxietyDepressionBtnTxt }} </button>
-        <button mat-menu-item (click)="handleButtonClick('themes/autocuidado-e-autoestima')"> {{ themeSelfEsteemConfidenceBtnText }} </button>
-        <button mat-menu-item (click)="handleButtonClick('themes/burnout-e-sindrome-do-panico')"> {{ themeBurnoutSyndromeBtnText }} </button>
-        <button mat-menu-item (click)="handleButtonClick('themes/crise-conjugal')"> {{ themeMaritalCrisisBtnText }} </button>
-      </mat-menu>
       <button mat-menu-item *ngIf="isAboutPage" (click)="handleButtonClick('therapy')"> {{ quaternaryBtnText }} </button>
       <button mat-menu-item *ngIf="!isAboutPage" [matMenuTriggerFor]="menuMobileTerapia">{{ quaternaryBtnText }}</button>
       <mat-menu #menuMobileTerapia="matMenu">
