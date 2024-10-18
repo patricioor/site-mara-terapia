@@ -1,0 +1,48 @@
+.img-mais-botao{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    padding-inline: 0.3rem;
+    width: 1.5rem;
+    border-right:2px solid #dbaca3;
+  }
+
+  button {
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+    background-color: #f0e6df;
+    color: #dbaca3;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+  }
+}
+.conteudo {
+  max-width: 100%;
+  width: 100%;
+  background-color: #f0e6df;
+  color: #dbaca3;
+  border-top:2px solid #dbaca3;
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0.5rem;
+
+    li{
+      width: 90%;
+      text-align: justify;
+      padding-bottom: 0.3rem;
+    }
+  }
+}

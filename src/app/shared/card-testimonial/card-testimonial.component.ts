@@ -14,6 +14,7 @@ export class CardTestimonialComponent {
   @Input() imagePath: string = '';
   @Input() buttonName: string = '';
   @Input() path: string = '';
+  @Input() location: string = '';
 
 
   constructor(private router:Router) {

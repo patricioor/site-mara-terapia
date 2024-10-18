@@ -66,43 +66,54 @@
   <div id="services" class="cards-service-section">
     <h2>Veja alguns temas que posso te ajudar</h2>
 
-    <div class="cards">
-      <div class="card">
-        <app-card
-          imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
-          title="Ansiedade e Depressão"
-          description="Clique para saber mais!"
-          buttonName="Clique para saber mais!"
-          path="themes/ansiedade-e-depressao"
-        >
-        </app-card>
-
-        <app-card
-          imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
-          title="Autoestima e Autoconfiança"
-          description="Clique para saber mais!"
-          buttonName="Clique para saber mais!"
-          path="themes/autocuidado-e-autoestima"
-        ></app-card>
-      </div>
-
-      <div class="card">
-        <app-card
-          imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
-          title="Burnout e Sindrome do Pânico"
-          description="Clique para saber mais!"
-          buttonName="Clique para saber mais!"
-          path="themes/burnout-e-sindrome-do-panico"
-        ></app-card>
-
-        <app-card
-          imagePath="https://img.icons8.com/?size=100&id=FX4GWbVxitZn&format=png&color=dbaca3"
-          title="Crise Conjugal"
-          description="Clique para saber mais!"
-          buttonName="Clique para saber mais!"
-          path="themes/crise-conjugal"
-        ></app-card>
-      </div>
+    <div class="menu-expansivel">
+      <app-accordion-menu
+        tittleTheme="Ansiedade"
+        symptomsTheme=" Preocupação excessiva, nervosismo constante, dificuldade em relaxar, sensação de que algo ruim vai acontecer, palpitações, falta de ar ou tremores."
+        worryTheme=" Se os sintomas persistirem por semanas, forem intensos ou dificultarem o sono e as atividades diárias."
+      ></app-accordion-menu>
+    </div>
+    <div class="menu-expansivel">
+      <app-accordion-menu
+        tittleTheme="Autoconfiança Baixa"
+        symptomsTheme=" Dúvida constante sobre suas habilidades, medo de errar ou falhar, dificuldade em tomar decisões, sentir-se inferior aos outros."
+        worryTheme=" Quando esses sentimentos começam a interferir no seu dia a dia, dificultando o trabalho, relacionamentos ou objetivos."
+      ></app-accordion-menu>
+    </div>
+    <div class="menu-expansivel">
+      <app-accordion-menu
+        tittleTheme="Autoestima Baixa"
+        symptomsTheme=" Pensamentos autodepreciativos, evitar desafios por medo de falhar, sensação de não ser bom o suficiente, dificuldade em aceitar elogios."
+        worryTheme=" Se essa percepção negativa de si mesmo afeta o bem-estar, os relacionamentos ou impede o desenvolvimento pessoal."
+      ></app-accordion-menu>
+    </div>
+    <div class="menu-expansivel">
+      <app-accordion-menu
+        tittleTheme="Burnout"
+        symptomsTheme=" Exaustão extrema, perda de motivação, irritabilidade, dificuldade em se concentrar, sentimentos de cinismo ou despersonalização no trabalho."
+        worryTheme=" Quando o cansaço físico e emocional é constante, mesmo após repouso, e compromete o desempenho no trabalho e na vida pessoal."
+      ></app-accordion-menu>
+    </div>
+    <div class="menu-expansivel">
+      <app-accordion-menu
+        tittleTheme="Crise Conjugal"
+        symptomsTheme=" Falta de comunicação, discussões frequentes, sentimentos de insatisfação no relacionamento, distanciamento emocional, perda de intimidade."
+        worryTheme=" Quando os problemas são recorrentes, não são resolvidos ou quando há pensamentos de separação."
+      ></app-accordion-menu>
+    </div>
+    <div class="menu-expansivel">
+      <app-accordion-menu
+        tittleTheme="Depressão"
+        symptomsTheme=" Tristeza persistente, perda de interesse em atividades antes prazerosas, fadiga, alterações no sono e apetite, sentimentos de culpa ou inutilidade, pensamentos suicidas."
+        worryTheme=" Se os sintomas durarem mais de duas semanas e afetarem a capacidade de funcionar no dia a dia."
+      ></app-accordion-menu>
+    </div>
+    <div class="menu-expansivel">
+      <app-accordion-menu
+        tittleTheme="Sindrome do Pânico"
+        symptomsTheme=" Ataques de pânico recorrentes com sintomas como taquicardia, falta de ar, sensação de sufocamento, tontura, medo intenso de morrer ou perder o controle."
+        worryTheme=" Se os ataques ocorrem frequentemente e afetam a rotina ou levam a um medo constante de ter novos episódios."
+      ></app-accordion-menu>
     </div>
   </div>
 
@@ -150,6 +161,7 @@
           description="Eu gostei muito da terapia que fiz com a Ciomara,com certeza consegui ver muitas mudanças em mim desde quando eu comecei o tratamento. Foi uma grande oportunidade de entender como eu devo olhar para a vida de um modo menos ansioso, mais leve sem dores de traumas do passado.Acho que sinceramente todos deveriam ter essa experiência. Como me ajudou no meu preparo para o vestibular me sintindo agora mais confiante e tranquila para a prova do Enem!"
           buttonName="Clique para saber mais!"
           path="testimonials"
+          location="Niterói-RJ"
         ></app-card-testimonial>
 
         <app-card-testimonial
@@ -161,6 +173,7 @@
                       Hoje me sinto livre dos traumas, do medo, e da dependência emocional. Gratidão 🥰 "
           buttonName="Clique para saber mais!"
           path="testimonials"
+          location="Rio de Janeiro - RJ"
         ></app-card-testimonial>
       </div>
 
@@ -168,8 +181,9 @@
         <app-card-testimonial
           imagePath="https://img.icons8.com/?size=100&id=93331&format=png&color=dbaca3"
           title="Simone"
-          description="a TRG ajuda a percepção que qdo ressignificamos os nossos traumas e fantasmas, passamos a perceber o quanto deixamos de gastar energia com o que realmente vale a pena, e mudar o foco, com a terapia eu tive auxilio para me enxergar melhor e priorizar o que realmente tem importância. para me organizar e reconhecer o meu valor e transformar fatos passados que atuavam como algum tipo de bloqueio ou impedimento de evoluir em algum campo da vida ou da própria trajetória em acontecimentos que nao vao me afetar mais nem hoje e nem no meu futuro. obrigada Ciomara por conduzir tao serenamente o processo terapeutio."
+          description="A TRG ajuda a percepção que qdo ressignificamos os nossos traumas e fantasmas, passamos a perceber o quanto deixamos de gastar energia com o que realmente vale a pena, e mudar o foco, com a terapia eu tive auxilio para me enxergar melhor e priorizar o que realmente tem importância. para me organizar e reconhecer o meu valor e transformar fatos passados que atuavam como algum tipo de bloqueio ou impedimento de evoluir em algum campo da vida ou da própria trajetória em acontecimentos que nao vao me afetar mais nem hoje e nem no meu futuro. obrigada Ciomara por conduzir tao serenamente o processo terapeutio."
           path="testimonials"
+          location="Niterói-RJ"
         ></app-card-testimonial>
 
         <app-card-testimonial
@@ -180,6 +194,7 @@ Muito obrigada pela sua orientação ,apoio, dedicação e profissionalismo.
 
 Linda missão de vida!"
           path="testimonials"
+          location="Fortaleza-CE"
         ></app-card-testimonial>
       </div>
     </div>

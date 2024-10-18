@@ -373,13 +373,15 @@
         margin-bottom: 20px;
       }
 
-      .cards {
+      .menu-expansivel{
         display: flex;
         flex-direction: row;
-        .card{
-          display: flex;
-          flex-direction: row;
-        }
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+        width: 60%;
+        background-color: #f0e6df;
+        margin-bottom: 0.5rem;
       }
     }
 

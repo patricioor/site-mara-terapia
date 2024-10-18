@@ -38,29 +38,59 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 10px;
       border: 2px solid #dbaca3;
-      padding: 25px;
+      padding: 1.5rem;
       background-color: #f0e6df;
-      height: 25rem;
       width: 17rem;
       box-sizing: border-box;
       transition: background-color 0.3s ease, transform 0.2s ease;
 
+      .img-topo {
+        height: 3rem;
+        padding-bottom: 5rem;
+        img {
+          color: white;
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+      }
+
+    .corpo-titulo {
+      height: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       h4 {
         color: #dbaca3;
         font-size: 17px;
+        padding-bottom: 2rem;
       }
-
+    }
+    .corpo-texto {
+      height: 15rem;
       p {
+        text-indent: 30px;
         color: #dbaca3;
         font-size: 12px;
         text-align: justify;
       }
+    }
 
-    img {
-        color: white;
-        width: 3.5rem;
-        height: 3.5rem;}
+    .locate{
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3rem;
+      img{
+        height: 24px;
+        width: 24px;
+      }
+      span{
+        color: #dbaca3;
+      }
+    }
   }
+
 }
