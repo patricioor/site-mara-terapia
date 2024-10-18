@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
-    background-image: url(../../../assets/png/home-mobile.JPG);
+    background-image: url(../../../assets/png/home-mobile-rosa.jpeg);
     background-size: cover;
     background-position: center;
     padding-top: 5rem;
@@ -254,11 +254,11 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
-    background-image: url(../../../assets/png/home-desktop.PNG);
+    background-image: url(../../../assets/png/home-desktop.jpeg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #f0e6df;
+    background-color: #dbaca3;
   }
 
   main {
@@ -270,7 +270,6 @@
     max-width: 100%;
     box-sizing: border-box;
     background-color: #f0e6df;
-    padding-inline: 6rem;
 
     .divider {
       display: flex;
