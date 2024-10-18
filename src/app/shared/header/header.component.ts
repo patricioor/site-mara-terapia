@@ -129,10 +129,6 @@ export class HeaderComponent {
         case 'services/travas-mentais':
           this.router.navigate(['/services/travas-mentais']);
           break;
-
-        case 'services/hipnoterapia':
-          this.router.navigate(['/services/hipnoterapia']);
-          break;
       }
     }
   }

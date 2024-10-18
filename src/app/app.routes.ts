@@ -3,7 +3,6 @@ import {AboutComponent} from "./components/about/about.component";
 import {TrgComponent} from "./components/service/trg/trg.component";
 import {AnaliseCorporalComponent} from "./components/service/analise-corporal/analise-corporal.component";
 import {TravasMentaisComponent} from "./components/service/travas-mentais/travas-mentais.component";
-import {HipnoterapiaComponent} from "./components/service/hipnoterapia/hipnoterapia.component";
 import {AnxietyDepressionComponent} from "./components/themes/anxiety-depression/anxiety-depression.component";
 import {
   SelfEsteemSelfConfidenceComponent
@@ -20,6 +19,5 @@ export const routes: Routes = [
   { path: 'services/trg', component: TrgComponent},
   { path: 'services/analise-corporal', component: AnaliseCorporalComponent},
   { path: 'services/travas-mentais', component: TravasMentaisComponent},
-  { path: 'services/hipnoterapia', component: HipnoterapiaComponent},
   { path: '**', redirectTo: 'about' }
 ];
