@@ -61,6 +61,7 @@
         <button mat-menu-item (click)="handleButtonClick('services/travas-mentais')"> {{ serviceTravasMentaisBtnText }} </button>
         <button mat-menu-item (click)="handleButtonClick('services/hipnoterapia')"> {{ serviceHipnoterapiaBtnText }} </button>
       </mat-menu>
+      <button mat-menu-item *ngIf="isAboutPage" (click)="handleButtonClick('testimonials')"> {{ quinaryBtnText }} </button>
       <button mat-menu-item *ngIf="isAboutPage" (click)="handleButtonClick('contact')"> {{ senaryBtnText }} </button>
     </mat-menu>
   </section>
