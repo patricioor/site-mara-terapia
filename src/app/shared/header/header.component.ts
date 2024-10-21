@@ -66,7 +66,7 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    const headerPosition = 960;
+    const headerPosition = window.innerHeight;
 
     const scrollPosition =
       document.documentElement.scrollTop ||

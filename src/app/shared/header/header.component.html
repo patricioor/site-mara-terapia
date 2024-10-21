@@ -9,14 +9,7 @@
       <div class="buttons-header">
         <button mat-button (click)="handleButtonClick('home')" > {{ primaryBtnText }} </button>
         <button mat-button (click)="handleButtonClick('about')"> {{ secondaryBtnText }} </button>
-        <button mat-button *ngIf="isAboutPage"  (click)="handleButtonClick('services')"> {{ tertiaryBtnText }} </button>
-        <button mat-button *ngIf="!isAboutPage" [matMenuTriggerFor]="menuDesktopTemas">{{ tertiaryBtnText }}</button>
-        <mat-menu #menuDesktopTemas="matMenu">
-          <button mat-menu-item (click)="handleButtonClick('themes/ansiedade-e-depressao')"> {{ themeAnxietyDepressionBtnTxt }} </button>
-          <button mat-menu-item (click)="handleButtonClick('themes/autocuidado-e-autoestima')"> {{ themeSelfEsteemConfidenceBtnText }} </button>
-          <button mat-menu-item (click)="handleButtonClick('themes/burnout-e-sindrome-do-panico')"> {{ themeBurnoutSyndromeBtnText }} </button>
-          <button mat-menu-item (click)="handleButtonClick('themes/crise-conjugal')"> {{ themeMaritalCrisisBtnText }} </button>
-        </mat-menu>
+        <button mat-button *ngIf="isAboutPage" (click)="handleButtonClick('services')"> {{ tertiaryBtnText }} </button>
         <button mat-button *ngIf="isAboutPage" (click)="handleButtonClick('therapy')"> {{ quaternaryBtnText }} </button>
         <button mat-button *ngIf="!isAboutPage" [matMenuTriggerFor]="menuDesktopTerapia">{{ quaternaryBtnText }}</button>
         <mat-menu #menuDesktopTerapia="matMenu">
