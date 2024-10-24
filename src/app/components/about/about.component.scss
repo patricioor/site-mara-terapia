@@ -590,6 +590,21 @@
           align-items: center;
           gap: 2rem;
 
+          .prof-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img{
+                height: 36px;
+                width: 36px;
+              }
+            }
+          }
+
           .prof-container {
             .prof-name {
               font-weight: 700;

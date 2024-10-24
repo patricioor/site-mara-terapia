@@ -10,6 +10,7 @@ import {Router} from "@angular/router";
 })
 export class CardTestimonialComponent {
   @Input() title: string = '';
+  @Input() subtitle: string = '';
   @Input() description: string = '';
   @Input() imagePath: string = '';
   @Input() buttonName: string = '';
