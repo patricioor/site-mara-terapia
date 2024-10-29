@@ -37,7 +37,7 @@
       }
 
       .h2-mobile {
-        width: 70%;
+        width: 80%;
         text-align: center;
         padding-bottom: 3rem;
       }
@@ -48,7 +48,6 @@
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        width: 90%;
         margin-bottom: 25px;
 
         .h2-desktop{
@@ -57,8 +56,9 @@
 
         p {
           text-indent: 30px;
-          width: 70%;
+          width: 85%;
           text-align: justify;
+          letter-spacing: -0.5px;
           padding-bottom: 40px;
 
         }
@@ -208,6 +208,26 @@
           }
 
           .inter-container {
+
+            button {
+              margin-top: 0.3rem;
+              border: none;
+              background-color: #f0e6df;
+              color: #dbaca3;
+              border-radius: 10px;
+              height: 2rem;
+              width: 11rem;
+            }
+
+              button:hover {
+                background-color: #e2d5c7;
+                transform: scale(1.05);
+              }
+
+              button:active {
+                transform: scale(0.95);
+              }
+
             a {
               outline: none;
               text-decoration: none;
@@ -465,6 +485,25 @@
           }
 
           .inter-container {
+              button {
+                margin-top: 0.3rem;
+                border: none;
+                background-color: #f0e6df;
+                color: #dbaca3;
+                border-radius: 10px;
+                height: 2rem;
+                width: 11rem;
+              }
+
+                button:hover {
+                  background-color: #e2d5c7;
+                  transform: scale(1.05);
+                }
+
+                button:active {
+                  transform: scale(0.95);
+                }
+
             a {
               outline: none;
               text-decoration: none;
@@ -742,6 +781,25 @@
           }
 
           .inter-container {
+              button {
+                margin-top: 0.2rem;
+                border: none;
+                background-color: #f0e6df;
+                color: #dbaca3;
+                border-radius: 10px;
+                height: 2rem;
+                width: 11rem;
+              }
+
+                button:hover {
+                  background-color: #e2d5c7;
+                  transform: scale(1.05);
+                }
+
+                button:active {
+                  transform: scale(0.95);
+                }
+
             a {
               outline: none;
               text-decoration: none;
