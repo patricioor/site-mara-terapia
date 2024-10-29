@@ -20,6 +20,10 @@
     background: #f0e6df;
     color: #dbaca3;
 
+    .h2-desktop{
+      display: none;
+    }
+
     .apresentation-section {
       padding-top: 6rem;
       display: flex;
@@ -294,6 +298,14 @@
     background: #f0e6df;
     color: #dbaca3;
 
+    h2{
+      padding-bottom: 2rem;
+    }
+
+    .h2-mobile {
+      display: none;
+    }
+
     .apresentation-section {
       display: flex;
       width: 100%;
@@ -455,89 +467,109 @@
         }
       }
     }
-
-    .contact-section {
+    #contact {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background-color: #dbaca3;
       color: #f0e6df;
       width: 100%;
       max-width: 100%;
-      height: 33vh;
-      gap: 5rem;
+      height: 35vh;
 
-      .writted-container {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .contact-container {
-          width: 40%;
-          padding-bottom: 1rem;
-
-          .separador-container {
-            width: 20rem;
-            border: 1px solid #f0e6df;
-          }
-
-          .inter-container {
-              button {
-                margin-top: 0.3rem;
-                border: none;
-                background-color: #f0e6df;
-                color: #dbaca3;
-                border-radius: 10px;
-                height: 2rem;
-                width: 11rem;
-              }
-
-                button:hover {
-                  background-color: #e2d5c7;
-                  transform: scale(1.05);
-                }
-
-                button:active {
-                  transform: scale(0.95);
-                }
-
-            a {
-              outline: none;
-              text-decoration: none;
-              color: inherit;
-            }
-
-            .atendimento-description {
-              font-weight: 500;
-            }
-
-            span.name {
-              font-size: 20px;
-            }
-
-            img {
-              width: 24px;
-              height: 24px;
-              padding-right: 5px;
-            }
-
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            align-items: center;
-          }
-        }
+      h2{
+        padding-bottom: 2rem;
       }
 
-      .img-container {
-        width: 30%;
+
+      .big-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+
+
+        .writted-container {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .contact-container {
+          width: 75%;
+          padding-bottom: 1rem;
+        }
+
+        .separador-container {
+          width: 25rem;
+          border: 1px solid #f0e6df;
+        }
+
+        .inter-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+        }
+
+        button {
+          margin-top: 0.2rem;
+          border: none;
+          background-color: #f0e6df;
+          color: #dbaca3;
+          border-radius: 10px;
+          height: 2rem;
+          width: 11rem;
+          font-weight: 700;
+        }
+
+        button:hover {
+          background-color: #e2d5c7;
+          transform: scale(1.05);
+        }
+
+        button:active {
+          transform: scale(0.95);
+        }
+
+        a {
+          outline: none;
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .atendimento-description {
+          font-weight: 500;
+        }
+
+        span.name {
+          font-size: 20px;
+        }
+
         img {
-          border: 2px solid #f0e6df;
-          border-radius: 15px;
-          width: 300px;
+          width: 24px;
+          height: 24px;
+        }
+
+        .img-container {
+          width: 30%;
+          img {
+            border: 2px solid #f0e6df;
+            border-radius: 15px;
+            width: 15rem;
+            height: 20rem;
+          }
+        }
+
+        .divider-main {
+          height: 3rem;
+          background-color: #f0e6df;
+          width: 100%;
+          max-width: 100%;
         }
       }
     }
@@ -579,18 +611,30 @@
       }
     }
 
-    .apresentation-section {
+    #about {
       display: flex;
       width: 80%;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       color: #dbaca3;
       padding-top: 6rem;
 
-      .h2-mobile{
+      h2 {
+        padding-bottom: 2rem;
+      }
+
+      .h2-mobile {
         display: none;
+      }
+
+      .big-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
       }
 
       img {
@@ -610,11 +654,6 @@
         width: 90%;
         margin-bottom: 25px;
 
-        h2 {
-          text-align: center;
-          padding-bottom: 3rem;
-        }
-
         p {
           text-indent: 30px;
           width: 70%;
@@ -630,15 +669,17 @@
           align-items: center;
           gap: 2rem;
 
-          .prof-button{
+          .prof-button {
             display: flex;
             justify-content: center;
             align-items: center;
-            a{
+
+            a {
               display: flex;
               justify-content: center;
               align-items: center;
-              img{
+
+              img {
                 height: 36px;
                 width: 36px;
               }
@@ -683,7 +724,7 @@
         margin-bottom: 20px;
       }
 
-      .menu-expansivel{
+      .menu-expansivel {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -716,7 +757,8 @@
       .cards {
         display: flex;
         flex-direction: row;
-        .card{
+
+        .card {
           display: flex;
           flex-direction: row;
         }
@@ -746,16 +788,16 @@
         display: flex;
         flex-direction: row;
 
-        .card{
+        .card {
           display: flex;
           flex-direction: row;
         }
       }
     }
 
-    .contact-section {
+    #contact {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background-color: #dbaca3;
@@ -764,84 +806,100 @@
       max-width: 100%;
       height: 55vh;
 
-      .writted-container {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .contact-container {
-          width: 40%;
-          padding-bottom: 1rem;
-
-          .separador-container {
-            width: 25rem;
-            border: 1px solid #f0e6df;
-          }
-
-          .inter-container {
-              button {
-                margin-top: 0.2rem;
-                border: none;
-                background-color: #f0e6df;
-                color: #dbaca3;
-                border-radius: 10px;
-                height: 2rem;
-                width: 11rem;
-              }
-
-                button:hover {
-                  background-color: #e2d5c7;
-                  transform: scale(1.05);
-                }
-
-                button:active {
-                  transform: scale(0.95);
-                }
-
-            a {
-              outline: none;
-              text-decoration: none;
-              color: inherit;
-            }
-
-            .atendimento-description {
-              font-weight: 500;
-            }
-
-            span.name {
-              font-size: 20px;
-            }
-
-            img {
-              width: 24px;
-              height: 24px;
-              padding-right: 5px;
-            }
-
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            align-items: center;
-          }
-        }
+      h2{
+        padding-bottom: 2rem;
       }
 
-      .img-container {
-        width: 30%;
+
+      .big-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+
+
+        .writted-container {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .contact-container {
+          width: 75%;
+          padding-bottom: 1rem;
+        }
+
+        .separador-container {
+          width: 25rem;
+          border: 1px solid #f0e6df;
+        }
+
+        .inter-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+        }
+
+        button {
+          margin-top: 0.2rem;
+          border: none;
+          background-color: #f0e6df;
+          color: #dbaca3;
+          border-radius: 10px;
+          height: 2rem;
+          width: 11rem;
+          font-weight: 700;
+        }
+
+        button:hover {
+          background-color: #e2d5c7;
+          transform: scale(1.05);
+        }
+
+        button:active {
+          transform: scale(0.95);
+        }
+
+        a {
+          outline: none;
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .atendimento-description {
+          font-weight: 500;
+        }
+
+        span.name {
+          font-size: 20px;
+        }
+
         img {
-          border: 2px solid #f0e6df;
-          border-radius: 15px;
-          width: 300px;
+          width: 24px;
+          height: 24px;
+        }
+
+        .img-container {
+          width: 30%;
+          img {
+            border: 2px solid #f0e6df;
+            border-radius: 15px;
+            width: 15rem;
+            height: 20rem;
+          }
+        }
+
+        .divider-main {
+          height: 3rem;
+          background-color: #f0e6df;
+          width: 100%;
+          max-width: 100%;
         }
       }
     }
-  }
-  .divider-main{
-    height: 3rem;
-    background-color: #f0e6df;
-    width: 100%;
-    max-width: 100%;
   }
 }

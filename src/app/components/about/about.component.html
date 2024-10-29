@@ -1,81 +1,92 @@
-<section id="home" class="home-section">
+<section id="home" class="home-section" role="banner" aria-label="Seção inicial">
 </section>
-<app-whatsapp-button>
-</app-whatsapp-button>
 
-<app-header
-  primaryBtnText="Home"
-  secondaryBtnText="Sobre"
-  tertiaryBtnText="Atendimentos"
-  quaternaryBtnText="Terapias"
-  quinaryBtnText="Depoimentos"
-  senaryBtnText="Contatos"
-></app-header>
+<app-whatsapp-button aria-label="Botão de WhatsApp"></app-whatsapp-button>
+
+<header>
+  <nav aria-label="Menu principal">
+    <app-header
+      primaryBtnText="Home"
+      secondaryBtnText="Sobre"
+      tertiaryBtnText="Atendimentos"
+      quaternaryBtnText="Terapias"
+      quinaryBtnText="Depoimentos"
+      senaryBtnText="Contatos"
+      role="navigation"
+    ></app-header>
+  </nav>
+</header>
 
 <main>
-  <div id="about" class="apresentation-section">
+  <section id="about" class="apresentation-section" aria-labelledby="about-heading">
+    <h2 class="h2-desktop">
+      Bem-vindo ao meu consultório, aqui você será bem acolhido!
+    </h2>
+
     <div class="h2-mobile">
-      <h2>Bem-vindo ao meu consultório, aqui você será bem acolhido!</h2>
+      <h3>Bem-vindo ao meu consultório, aqui você será bem acolhido!</h3>
     </div>
-    <div class="img-apresentantion">
-      <img
-        src="assets/png/apresentation-photo.jpeg"
-        alt="Foto de apresentação"
-      />
-    </div>
-    <div class="apresentation-text">
-      <h2 class="h2-desktop">Bem-vindo ao meu consultório, aqui você será bem acolhido!</h2>
-      <p>
-        Bem-vindo ao seu espaço de cura emocional. Aqui, você encontrará um ambiente seguro e acolhedor para explorar e transformar suas emoções.
-        Sou Ciomara Osterno, terapeuta especializada em Terapia de Reprocessamento Generativo (TRG), focada em ajudá-lo a superar conflitos emocionais
-        e a descobrir uma versão mais saudável e plena de si mesmo.
-      </p>
 
-      <p>
-        Tenho uma sólida formação em Letras – Licenciatura Plena pela UECE (Universidade Estadual do Ceará), e sou pós-graduada em Psicopedagogia Clínica
-        e Institucional pela Universidade Vale do Acaraú (UVA). Além disso, sou certificada como Terapeuta de Alta Performance Mental (TAPM) pela UNIFAST.
-        Minha especialização em Transtornos Emocionais, Leitura Corporal e Comportamental pelo Instituto Brasileiro de Formação de Terapeutas (IBFT)
-        me permite oferecer uma abordagem terapêutica profunda e eficaz.
-      </p>
+    <div class="big-container">
+      <div class="img-apresentantion">
+        <img
+          src="assets/png/apresentation-photo.jpeg"
+          alt="Ciomara Osterno no consultório"
+          role="img"
+        />
+      </div>
+      <div class="apresentation-text">
+        <p>
+          Bem-vindo ao seu espaço de cura emocional. Aqui, você encontrará um ambiente seguro e acolhedor para explorar e transformar suas emoções.
+          Sou Ciomara Osterno, terapeuta especializada em Terapia de Reprocessamento Generativo (TRG), focada em ajudá-lo a superar conflitos emocionais
+          e a descobrir uma versão mais saudável e plena de si mesmo.
+        </p>
 
-      <p>
-        A Terapia de Reprocessamento Generativo é uma terapia breve, focada na resolução de problemas emocionais e psicossomáticos, atuando diretamente
-        nas raízes de traumas, fobias, compulsões, ansiedade, depressão e crises de pânico. Meu compromisso é guiar você no processo de libertação emocional,
-        proporcionando o suporte necessário para que alcance o equilíbrio e a paz interior.
-      </p>
+        <p>
+          Tenho uma sólida formação em Letras – Licenciatura Plena pela UECE (Universidade Estadual do Ceará), e sou pós-graduada em Psicopedagogia Clínica
+          e Institucional pela Universidade Vale do Acaraú (UVA). Além disso, sou certificada como Terapeuta de Alta Performance Mental (TAPM) pela UNIFAST.
+          Minha especialização em Transtornos Emocionais, Leitura Corporal e Comportamental pelo Instituto Brasileiro de Formação de Terapeutas (IBFT)
+          me permite oferecer uma abordagem terapêutica profunda e eficaz.
+        </p>
 
-      <p>
-        Neste espaço, você encontrará ferramentas e conteúdos que contribuirão para o seu desenvolvimento pessoal. Não se esqueça de me seguir nas redes sociais,
-        onde compartilho mais insights e reflexões sobre a jornada de cura emocional. Estou aqui para ajudá-lo a trilhar um caminho de transformação e bem-estar.
-      </p>
-      <div class="prof-section">
-        <div class="prof-button">
-          <a target="_blank" href="https://www.instagram.com/maraterapiaonline">
-            <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=dbaca3">
-          </a>
-        </div>
-        <div class="prof-container">
-          <div class="prof-name">
-            Ciomara O. Martins
+        <p>
+          A Terapia de Reprocessamento Generativo é uma terapia breve, focada na resolução de problemas emocionais e psicossomáticos, atuando diretamente
+          nas raízes de traumas, fobias, compulsões, ansiedade, depressão e crises de pânico. Meu compromisso é guiar você no processo de libertação emocional,
+          proporcionando o suporte necessário para que alcance o equilíbrio e a paz interior.
+        </p>
+
+        <p>
+          Neste espaço, você encontrará ferramentas e conteúdos que contribuirão para o seu desenvolvimento pessoal. Não se esqueça de me seguir nas redes sociais,
+          onde compartilho mais insights e reflexões sobre a jornada de cura emocional. Estou aqui para ajudá-lo a trilhar um caminho de transformação e bem-estar.
+        </p>
+        <div class="prof-section">
+          <div class="prof-button">
+            <a target="_blank" href="https://www.instagram.com/maraterapiaonline" aria-label="Instagram da terapeuta Ciomara Osterno">
+              <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=dbaca3" alt="Ícone do Instagram">
+            </a>
           </div>
-          <div class="prof-description">
-            Terapeuta Emocional - TRG
-            <br />
-            CITRG: 10.952
+          <div class="prof-container">
+            <div class="prof-name">Ciomara O. Martins</div>
+            <div class="prof-description">
+              Terapeuta Emocional - TRG<br />
+              CITRG: 10.952
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="services" class="cards-service-section">
-    <h2>Veja alguns temas que posso te atender</h2>
-
+  <section id="services" class="cards-service-section" aria-labelledby="services-heading">
+    <h2 id="services-heading">Veja alguns temas que posso te atender</h2>
     <div class="menu-expansivel">
       <app-accordion-menu
         tittleTheme="Ansiedade"
-        symptomsTheme=" Preocupação excessiva, nervosismo constante, dificuldade em relaxar, sensação de que algo ruim vai acontecer, palpitações, falta de ar ou tremores."
-        worryTheme=" Se os sintomas persistirem por semanas, forem intensos ou dificultarem o sono e as atividades diárias."
+        symptomsTheme="Preocupação excessiva, nervosismo constante, dificuldade em relaxar, sensação de que algo ruim vai acontecer, palpitações, falta de ar ou tremores."
+        worryTheme="Se os sintomas persistirem por semanas, forem intensos ou dificultarem o sono e as atividades diárias."
+        role="button"
+        aria-expanded="false"
+        tabindex="0"
       ></app-accordion-menu>
     </div>
     <div class="menu-expansivel">
@@ -120,11 +131,10 @@
         worryTheme=" Se os ataques ocorrem frequentemente e afetam a rotina ou levam a um medo constante de ter novos episódios."
       ></app-accordion-menu>
     </div>
-  </div>
+  </section>
 
-  <div id="therapy" class="cards-therapy-section">
-    <h2>Conheça as terapias aplicadas por mim</h2>
-
+  <section id="therapy" class="cards-therapy-section" aria-labelledby="therapy-heading">
+    <h2 id="therapy-heading">Conheça as terapias aplicadas por mim</h2>
     <div class="cards">
       <app-card
         imagePath="https://img.icons8.com/?size=100&id=zYiLBfhJTOHx&format=png&color=dbaca3"
@@ -132,8 +142,9 @@
         description="Clique para saber mais!"
         buttonName="Clique para saber mais!"
         path="services/trg"
+        role="link"
+        tabindex="0"
       ></app-card>
-
       <app-card
         imagePath="https://img.icons8.com/?size=100&id=zYiLBfhJTOHx&format=png&color=dbaca3"
         title="Análise Corporal"
@@ -141,19 +152,18 @@
         buttonName="Clique para saber mais!"
         path="services/analise-corporal"
       ></app-card>
-        <app-card
-          imagePath="https://img.icons8.com/?size=100&id=zYiLBfhJTOHx&format=png&color=dbaca3"
-          title="Travas Mentais"
-          description="Clique para saber mais!"
-          buttonName="Clique para saber mais!"
-          path="services/travas-mentais"
-        ></app-card>
+      <app-card
+        imagePath="https://img.icons8.com/?size=100&id=zYiLBfhJTOHx&format=png&color=dbaca3"
+        title="Travas Mentais"
+        description="Clique para saber mais!"
+        buttonName="Clique para saber mais!"
+        path="services/travas-mentais"
+      ></app-card>
     </div>
-  </div>
+  </section>
 
-  <div id="testimonials" class="cards-depoimentos-section">
-    <h2>Depoimentos de quem já transformou a sua vida</h2>
-
+  <section id="testimonials" class="cards-depoimentos-section" aria-labelledby="testimonials-heading">
+    <h2 id="testimonials-heading">Depoimentos de quem já transformou a sua vida</h2>
     <div class="cards">
       <div class="card">
         <app-card-testimonial
@@ -164,8 +174,8 @@
           buttonName="Clique para saber mais!"
           path="testimonials"
           location="Niterói-RJ"
+          aria-label="Depoimento de Maria Rita sobre Ansiedade"
         ></app-card-testimonial>
-
         <app-card-testimonial
           imagePath="https://img.icons8.com/?size=100&id=93331&format=png&color=dbaca3"
           title="Onizia"
@@ -202,74 +212,74 @@
         ></app-card-testimonial>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="divider"><div></div></div>
+  <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contato</h2>
 
-  <div id="contact" class="contact-section">
-    <div class="writted-container">
+      <div class="big-container">
+        <div class="writted-container">
+          <div class="contact-container">
+            <div class="inter-container">
+              <span class="name">Ciomara O. Martins</span>
+            </div>
+            <div class="inter-container">
+              Terapeuta Emocional - TRG<br />CITRG: 10.952
+            </div>
+          </div>
 
-      <div class="contact-container">
-        <div class="inter-container">
-          <span class="name">
-             Ciomara O. Martins
-          </span>
-        </div>
-        <div class="inter-container">
-          Terapeuta Emocional - TRG
-          <br>
-          CITRG: 10.952
-        </div>
-      </div>
+          <div class="contact-container">
+            <div class="inter-container">
+              <img src="https://img.icons8.com/?size=100&id=85088&format=png&color=f0e6df" alt="Ícone do WhatsApp">
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5521988249268&text=Olá, Ciomara! Vi seu site e gostaria de saber mais sobre seu trabalho."
+                aria-label="Número do WhatsApp da Ciomara">+55 21 988249268</a>
+            </div>
 
-      <div class="contact-container">
-        <div class="inter-container">
-          <img src="https://img.icons8.com/?size=100&id=85088&format=png&color=f0e6df">
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=5521988249268&text=Olá, Ciomara! Vi seu site e gostaria de saber mais sobre seu trabalho."
-            >+55 21 988249268</a>
+            <div class="inter-container">
+              <img src="https://img.icons8.com/?size=100&id=86840&format=png&color=f0e6df" alt="Ícone do Email">
+              psicomara10&#64;gmail.com
+            </div>
+
+            <div class="inter-container">
+              <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=f0e6df" alt="Ícone do Instagram">
+              <a target="_blank" href="https://www.instagram.com/maraterapiaonline">maraterapiaonline</a>
+            </div>
+          </div>
+
+          <div class="contact-container">
+            <div class="separador-container"></div>
+          </div>
+
+          <div class="contact-container">
+            <div class="inter-container">
+              <span class="atendimento-description">Atendimento 100% online no conforto da sua casa!</span>
+            </div>
+          </div>
+
+          <div class="contact-container">
+            <div class="inter-container">
+              <button>
+                <a href="https://api.whatsapp.com/send?phone=5521988249268&text=Olá, Ciomara! Vi seu site e gostaria de saber mais sobre seu trabalho.">
+                  <span>Agenda já a sua consulta!</span>
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-container">
+            <div class="separador-container"></div>
+          </div>
         </div>
-        <div class="inter-container">
-          <img src="https://img.icons8.com/?size=100&id=86840&format=png&color=f0e6df">
-          psicomara10&#64;gmail.com
-        </div>
-        <div class="inter-container">
-          <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=f0e6df">
-          <a target="_blank" href="https://www.instagram.com/maraterapiaonline">
-            maraterapiaonline
-          </a>
+
+        <div class="img-container">
+          <img src="/assets/png/contatos-desktop.JPG" alt="Imagem de fundo decorativa para a seção de contato">
         </div>
       </div>
-      <div class="contact-container">
-      </div>
-      <div class="contact-container">
-        <div class="separador-container"></div>
-      </div>
-      <div class="contact-container">
-        <div class="inter-container">
-          <span class="atendimento-description">Atendimento 100% online no conforto da sua casa!</span>
-        </div>
-      </div>
-      <div class="contact-container">
-        <div class="inter-container">
-            <button>
-              <a href="https://api.whatsapp.com/send?phone=5521988249268&text=Olá, Ciomara! Vi seu site e gostaria de saber mais sobre seu trabalho.">
-                <span>Agenda já a sua consulta!</span>
-              </a>
-            </button>
-        </div>
-      </div>
-      <div class="contact-container">
-        <div class="separador-container"></div>
-      </div>
-    </div>
-    <div class="img-container">
-      <img alt="" src="/assets/png/contatos-desktop.JPG">
-    </div>
-  </div>
+  </section>
 </main>
 
-<div class="divider-main"><div></div></div>
-
-<app-footer></app-footer>
+<footer aria-label="Rodapé do site">
+  <app-footer></app-footer>
+</footer>
