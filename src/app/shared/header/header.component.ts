@@ -41,6 +41,7 @@ export class HeaderComponent {
   @Input() quinaryBtnText: string = "";
   @Input() senaryBtnText: string = "";
   @Input() septnaryBtnText: string = "";
+  @Input() aboutBtnText: string = "";
   @Input() serviceTrgBtnTxt: string = "";
   @Input() serviceAnaliseCorporalBtnText: string = "";
   @Input() serviceTravasMentaisBtnText: string = "";
@@ -83,7 +84,7 @@ export class HeaderComponent {
   handleButtonClick(buttonId: string) {
     const currentPath = this.router.url;
 
-    if (currentPath === ('/about' || '')) {
+    if (currentPath === ('/home' || '')) {
       const element = document.getElementById(buttonId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -96,6 +97,10 @@ export class HeaderComponent {
 
         case 'about':
           this.router.navigate(['/about#about']);
+          break;
+
+        case 'about-me':
+          this.router.navigate(['/about-me']);
           break;
 
         case 'services':

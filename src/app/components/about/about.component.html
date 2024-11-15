@@ -19,23 +19,26 @@
 
 <main>
   <section id="about" class="apresentation-section" aria-labelledby="about-heading">
-    <h2 class="h2-desktop">
-      Bem-vindo ao meu consultório, aqui você será bem acolhido!
-    </h2>
 
     <div class="h2-mobile">
       <h3>Bem-vindo ao meu consultório, aqui você será bem acolhido!</h3>
     </div>
 
     <div class="big-container">
-      <div class="img-apresentantion">
-        <img
-          src="assets/png/apresentation-photo.jpeg"
-          alt="Ciomara Osterno no consultório"
-          role="img"
-        />
+      <div class="video-apresentantion">
+        <iframe
+          width="100%"
+          height="auto"
+          src="https://www.youtube.com/embed/cFpi1cbUwa4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
       <div class="apresentation-text">
+        <h2 class="h2-desktop">
+          Bem-vindo ao meu consultório, aqui você será bem acolhido!
+        </h2>
         <p>
           Bem-vindo ao seu espaço de cura emocional. Aqui, você encontrará um ambiente seguro e acolhedor para explorar e transformar suas emoções.
           Sou Ciomara Osterno, terapeuta especializada em Terapia de Reprocessamento Generativo (TRG), focada em ajudá-lo a superar conflitos emocionais
@@ -43,27 +46,16 @@
         </p>
 
         <p>
-          Tenho uma sólida formação em Letras – Licenciatura Plena pela UECE (Universidade Estadual do Ceará), e sou pós-graduada em Psicopedagogia Clínica
-          e Institucional pela Universidade Vale do Acaraú (UVA). Além disso, sou certificada como Terapeuta de Alta Performance Mental (TAPM) pela UNIFAST.
-          Minha especialização em Transtornos Emocionais, Leitura Corporal e Comportamental pelo Instituto Brasileiro de Formação de Terapeutas (IBFT)
-          me permite oferecer uma abordagem terapêutica profunda e eficaz.
-        </p>
-
-        <p>
-          A Terapia de Reprocessamento Generativo é uma terapia breve, focada na resolução de problemas emocionais e psicossomáticos, atuando diretamente
-          nas raízes de traumas, fobias, compulsões, ansiedade, depressão e crises de pânico. Meu compromisso é guiar você no processo de libertação emocional,
-          proporcionando o suporte necessário para que alcance o equilíbrio e a paz interior.
-        </p>
-
-        <p>
-          Neste espaço, você encontrará ferramentas e conteúdos que contribuirão para o seu desenvolvimento pessoal. Não se esqueça de me seguir nas redes sociais,
-          onde compartilho mais insights e reflexões sobre a jornada de cura emocional. Estou aqui para ajudá-lo a trilhar um caminho de transformação e bem-estar.
+          Olá, sou Ciomara Osterno Martins, especialista em desenvolvimento humano e apaixonada por transformar vidas através da terapia.
+          Com uma trajetória sólida de mais de 18 anos e dezenas de atendimentos, dedico minha carreira ao profundo entendimento das emoções
+          e do comportamento humano. Minha missão é ajudar você a superar bloqueios emocionais, construir autoconfiança e encontrar um caminho
+          de equilíbrio e crescimento.
         </p>
         <div class="prof-section">
           <div class="prof-button">
-            <a target="_blank" href="https://www.instagram.com/maraterapiaonline" aria-label="Instagram da terapeuta Ciomara Osterno">
-              <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=dbaca3" alt="Ícone do Instagram">
-            </a>
+            <button (click)="navigateAboutMe()">
+              Sobre mim
+            </button>
           </div>
           <div class="prof-container">
             <div class="prof-name">Ciomara O. Martins</div>

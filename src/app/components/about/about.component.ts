@@ -57,8 +57,8 @@ export class AboutComponent implements OnInit {
     }
   }
 
-  navigateService(): void {
-    this.router.navigate(["service"]);
+  navigateAboutMe(): void {
+    this.router.navigate(["about-me"]);
   }
 
   navigateBlog(): void {
