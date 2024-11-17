@@ -15,5 +15,5 @@ import {WhatsappButtonComponent} from "../../shared/whatsapp-button/whatsapp-but
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
-
+  //
 }
