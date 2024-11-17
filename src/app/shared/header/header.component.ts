@@ -84,7 +84,7 @@ export class HeaderComponent {
   handleButtonClick(buttonId: string) {
     const currentPath = this.router.url;
 
-    if (currentPath === ('/home' || '')) {
+    if (currentPath === ('/about' || '')) {
       const element = document.getElementById(buttonId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });

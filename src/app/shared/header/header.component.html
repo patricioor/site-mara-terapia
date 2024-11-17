@@ -19,7 +19,8 @@
           <button mat-menu-item (click)="handleButtonClick('services/travas-mentais')"> {{ serviceTravasMentaisBtnText }} </button>
         </mat-menu>
         <button mat-button *ngIf="isAboutPage" (click)="handleButtonClick('testimonials')"> {{ quinaryBtnText }} </button>
-        <button mat-button *ngIf="isAboutPage" (click)="handleButtonClick('contact')"> {{ senaryBtnText }} </button>
+        <button mat-button *ngIf="isAboutPage" (click)="handleButtonClick('service')"> {{ senaryBtnText }} </button>
+        <button mat-button *ngIf="isAboutPage" (click)="handleButtonClick('contact')"> {{ septnaryBtnText }} </button>
       </div>
     </mat-toolbar>
 
@@ -48,7 +49,8 @@
         <button mat-menu-item (click)="handleButtonClick('services/travas-mentais')"> {{ serviceTravasMentaisBtnText }} </button>
       </mat-menu>
       <button mat-menu-item *ngIf="isAboutPage" (click)="handleButtonClick('testimonials')"> {{ quinaryBtnText }} </button>
-      <button mat-menu-item *ngIf="isAboutPage" (click)="handleButtonClick('contact')"> {{ senaryBtnText }} </button>
+      <button mat-menu-item *ngIf="isAboutPage" (click)="handleButtonClick('testimonials')"> {{ senaryBtnText }} </button>
+      <button mat-menu-item *ngIf="isAboutPage" (click)="handleButtonClick('contact')"> {{ septnaryBtnText }} </button>
     </mat-menu>
   </section>
 
