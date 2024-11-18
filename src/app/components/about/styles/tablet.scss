@@ -1,0 +1,325 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-section {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-image: url('/assets/png/home-desktop.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #dbaca3;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    background: #f0e6df;
+    color: #dbaca3;
+
+    h2{
+      padding-bottom: 2rem;
+    }
+
+    .h2-mobile {
+      display: none;
+    }
+
+    .apresentation-section {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 6rem;
+      background-color: #f0e6df;
+
+      .video-apresentantion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #dbaca3;
+        border-radius: 15px;
+        overflow: hidden;
+        max-width: 25%;
+      }
+
+      .video-apresentantion video {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .h2-mobile {
+        width: 70%;
+        text-align: center;
+        padding-bottom: 3rem;
+      }
+
+      .apresentation-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        width: 90%;
+        margin-bottom: 25px;
+
+        .h2-desktop {
+          display: none;
+        }
+
+        p {
+          text-indent: 30px;
+          width: 70%;
+          text-align: justify;
+          padding-bottom: 40px;
+
+        }
+
+        .prof-section {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+
+          .prof-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+              border-radius: 1rem;
+              width: 6rem;
+              height: 2rem;
+              background-color: #f0e6df;
+              color: #dbaca3;
+              border: 1px solid #dbaca3;
+              font-weight: 700;
+            }
+
+            button:hover {
+              cursor: pointer;
+              border: none;
+              background-color: #dbaca3;
+              color: #f0e6df;
+              transform: scale(1.05);
+            }
+
+            button:active {
+              transform: scale(0.95);
+            }
+          }
+        }
+
+      }
+    }
+
+    .cards-service-section {
+      width: 100%;
+      max-width: 100%;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #dbaca3;
+      padding-top: 5rem;
+      padding-bottom: 2.5rem;
+
+      h2 {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        font-size: 20px;
+        background-color: #f0e6df;
+        color: #dbaca3;
+        margin: 20px;
+        text-align: center;
+      }
+
+      .menu-expansivel {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+        width: 60%;
+        background-color: #f0e6df;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .cards-therapy-section {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 2rem;
+
+      h2 {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        font-size: 20px;
+        text-align: center;
+        background-color: #dbaca3;
+        color: #f0e6df;
+        margin: 20px;
+      }
+
+      .cards {
+        display: flex;
+        margin: 1rem;
+        gap: 0.5rem;
+      }
+    }
+
+    #testimonials {
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #dbaca3;
+      padding-top: 6rem;
+      padding-bottom: 3rem;
+
+      h2 {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        background-color: #f0e6df;
+        color: #dbaca3;
+        margin-bottom: 20px;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+
+        .card{
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+    #contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #dbaca3;
+      color: #f0e6df;
+      width: 100%;
+      max-width: 100%;
+      height: 35vh;
+
+      h2{
+        padding-bottom: 2rem;
+      }
+
+
+      .big-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+
+
+        .writted-container {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .contact-container {
+          width: 75%;
+          padding-bottom: 1rem;
+        }
+
+        .separador-container {
+          width: 25rem;
+          border: 1px solid #f0e6df;
+        }
+
+        .inter-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+        }
+
+        button {
+          margin-top: 0.2rem;
+          border: none;
+          background-color: #f0e6df;
+          color: #dbaca3;
+          border-radius: 10px;
+          height: 2rem;
+          width: 11rem;
+          font-weight: 700;
+        }
+
+        button:hover {
+          background-color: #e2d5c7;
+          transform: scale(1.05);
+        }
+
+        button:active {
+          transform: scale(0.95);
+        }
+
+        a {
+          outline: none;
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .atendimento-description {
+          font-weight: 500;
+        }
+
+        span.name {
+          font-size: 20px;
+        }
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+
+        .img-container {
+          width: 30%;
+          img {
+            border: 2px solid #f0e6df;
+            border-radius: 15px;
+            width: 15rem;
+            height: 20rem;
+          }
+        }
+
+        .divider-main {
+          height: 3rem;
+          background-color: #f0e6df;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

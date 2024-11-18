@@ -24,7 +24,7 @@ import {AccordionMenuComponent} from "../../shared/accordion-menu/accordion-menu
     AccordionMenuComponent
   ],
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./styles/about.component.scss']
 })
 export class AboutComponent implements OnInit {
   @Input() AboutButtonText: string = "Entre em contato comigo";
