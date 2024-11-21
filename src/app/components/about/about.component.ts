@@ -3,7 +3,7 @@ import { HeaderComponent } from "../../shared/header/header.component";
 import { FooterComponent } from "../../shared/footer/footer.component";
 import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 import { CardComponent } from "../../shared/card/card.component";
-import {async, delay, filter} from "rxjs";
+import {filter} from "rxjs";
 import { Subscription } from "rxjs";
 import {CardTestimonialComponent} from "../../shared/card-testimonial/card-testimonial.component";
 import {WhatsappButtonComponent} from "../../shared/whatsapp-button/whatsapp-button.component";
