@@ -7,7 +7,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 65vh;
+    height: 75vh;
 
     .img-container {
       width: 30%;
@@ -17,8 +17,8 @@ main {
       img {
         border: 2px solid #dbaca3;
         border-radius: 15px;
-        width: 15rem;
-        height: 20rem;
+        width: 25rem;
+        height: 30rem;
       }
     }
 
@@ -42,6 +42,10 @@ main {
         text-align: justify;
         margin-bottom: 2rem;
         gap: 11px;
+
+        ul li{
+          margin-bottom: 1rem;
+        }
       }
     }
   }
@@ -54,7 +58,7 @@ main {
     color: #f0e6df;
     width: 100%;
     max-width: 100%;
-    height: 55vh;
+    height: 50vh;
 
     h2 {
       padding-bottom: 2rem;
