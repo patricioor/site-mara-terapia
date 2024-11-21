@@ -3,7 +3,7 @@ import { HeaderComponent } from "../../shared/header/header.component";
 import { FooterComponent } from "../../shared/footer/footer.component";
 import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 import { CardComponent } from "../../shared/card/card.component";
-import { filter } from "rxjs";
+import {async, delay, filter} from "rxjs";
 import { Subscription } from "rxjs";
 import {CardTestimonialComponent} from "../../shared/card-testimonial/card-testimonial.component";
 import {WhatsappButtonComponent} from "../../shared/whatsapp-button/whatsapp-button.component";
@@ -29,11 +29,18 @@ import {AccordionMenuComponent} from "../../shared/accordion-menu/accordion-menu
 export class AboutComponent implements OnInit {
   @Input() AboutButtonText: string = "Entre em contato comigo";
   private fragmentSubscription: Subscription = new Subscription();
+  anosAtendimento: number = 0;
+  horasAtendimento: number = 0;
+  fimLoopAnos: boolean = true;
+  fimLoopHoras: boolean = true;
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
-  ngOnInit(): void {
+  delayAction(delay: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve,delay))
+  }
 
+  ngOnInit(): void {
     this.fragmentSubscription.add(
       this.router.events
         .pipe(filter(event => event instanceof NavigationEnd))
@@ -45,7 +52,10 @@ export class AboutComponent implements OnInit {
           });
         })
     );
+    this.executarLoopAnos().then();
+    this.executarLoopHoras().then();
   }
+
   scrollToSection(section: string): void {
     const element = document.getElementById(section);
     if (element) {
@@ -54,6 +64,20 @@ export class AboutComponent implements OnInit {
         block: 'start',
         inline: 'nearest'
       });
+    }
+  }
+
+  async executarLoopAnos(): Promise<void> {
+    while (this.fimLoopAnos) {
+      if (this.anosAtendimento < 18) this.anosAtendimento++;
+      if (this.anosAtendimento == 18) this.fimLoopAnos = false;
+      await this.delayAction(54);
+    }
+  }async executarLoopHoras(): Promise<void> {
+    while (this.fimLoopHoras) {
+      if (this.horasAtendimento < 10) this.horasAtendimento++;
+      if (this.horasAtendimento == 10) this.fimLoopHoras = false;
+      await this.delayAction(100);
     }
   }
 

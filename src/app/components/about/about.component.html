@@ -9,7 +9,7 @@
       primaryBtnText="Home"
       secondaryBtnText="Sobre"
       tertiaryBtnText="Atendimentos"
-      quaternaryBtnText="Terapias"
+      quaternaryBtnText="Abordagens"
       quinaryBtnText="Depoimentos"
       senaryBtnText="Consultório"
       septnaryBtnText="Contatos"
@@ -28,7 +28,7 @@
     <div class="big-container">
       <div class="video-apresentantion">
         <video controls>
-          <source src="assets/video/video-alterantivo-home.mp4">
+          <source src="assets/video/video-about.MP4">
           Seu navegador não suporta a tag de vídeo.
         </video>
       </div>
@@ -54,11 +54,11 @@
         <div>
           <div class="info-container">
             <div class="info-block">
-              <span class="highlight">+18</span><span class="text"> anos</span>
+              <span class="highlight">{{anosAtendimento}}</span><span class="text"> anos</span>
               <p class="description">de atuação</p>
             </div>
             <div class="info-block">
-              <span class="highlight">+10</span><span class="text"> mil</span>
+              <span class="highlight">+{{horasAtendimento}}</span><span class="text"> mil</span>
               <p class="description">horas de atendimento</p>
             </div>
           </div>
@@ -72,8 +72,8 @@
     <div class="menu-expansivel">
       <app-accordion-menu
         tittleTheme="Ansiedade"
-        symptomsTheme="Preocupação excessiva, nervosismo constante, dificuldade em relaxar, sensação de que algo ruim vai acontecer, palpitações, falta de ar ou tremores."
-        worryTheme="Se os sintomas persistirem por semanas, forem intensos ou dificultarem o sono e as atividades diárias."
+        symptomsTheme=" Preocupação excessiva, nervosismo constante, dificuldade em relaxar, sensação de que algo ruim vai acontecer, palpitações, falta de ar ou tremores."
+        worryTheme=" Se os sintomas persistirem por semanas, forem intensos ou dificultarem o sono e as atividades diárias."
         role="button"
         aria-expanded="false"
         tabindex="0"
@@ -292,7 +292,7 @@
         </div>
 
         <div class="img-container">
-          <img src="/assets/png/contatos-desktop.JPG" alt="Imagem de fundo decorativa para a seção de contato">
+          <img src="/assets/png/foto-nova-contato.jpg" alt="Imagem de fundo decorativa para a seção de contato">
         </div>
       </div>
   </section>
