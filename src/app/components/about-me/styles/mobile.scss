@@ -1,0 +1,147 @@
+@media (max-width: 767px) {
+  main {
+    background: #f0e6df;
+    color: #dbaca3;
+
+    .first-big-container {
+      padding-top: 7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .img-container {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          border: 2px solid #dbaca3;
+          border-radius: 15px;
+          width: 17rem;
+          height: 24rem;
+        }
+      }
+
+      .inter-container {
+        width: 50%;
+        margin-top: 2rem;
+
+        header {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 2rem;
+        }
+
+        section {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+          gap: 11px;
+
+          ul li {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    .contact-section {
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      background-color: #dbaca3;
+      color: #f0e6df;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+
+      h2{
+        padding-bottom: 2rem;
+      }
+
+      .writted-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-bottom: 2rem;
+
+
+        .contact-container {
+          padding-bottom: 1.2rem;
+
+          .separador-container {
+            width: 10rem;
+            border: 1px solid #f0e6df;
+          }
+
+          .inter-container {
+
+            button {
+              margin-top: 0.3rem;
+              border: none;
+              background-color: #f0e6df;
+              color: #dbaca3;
+              border-radius: 10px;
+              height: 2rem;
+              width: 11rem;
+            }
+
+            button:hover {
+              background-color: #e2d5c7;
+              transform: scale(1.05);
+            }
+
+            button:active {
+              transform: scale(0.95);
+            }
+
+            a {
+              outline: none;
+              text-decoration: none;
+              color: inherit;
+            }
+
+            .atendimento-description {
+              font-weight: 500;
+              font-size: 0.8rem;
+            }
+
+            span.name {
+              font-size: 22px;
+            }
+
+            img {
+              width: 24px;
+              height: 24px;
+              padding-right: 5px;
+            }
+
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+          }
+        }
+      }
+
+      .img-container {
+        padding-bottom: 2rem;
+
+        img {
+          border: 2px solid #f0e6df;
+          border-radius: 15px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ import {WhatsappButtonComponent} from "../../shared/whatsapp-button/whatsapp-but
         WhatsappButtonComponent
     ],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrl: './styles/about-me.component.scss'
 })
 export class AboutMeComponent {
   //

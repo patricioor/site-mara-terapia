@@ -3,8 +3,7 @@ import {
   ElementRef,
   EventEmitter, HostListener,
   Input,
-  Output,
-  Renderer2, ViewChild,
+  Output, ViewChild,
 } from '@angular/core';
 import {NavigationEnd, Router, RouterLink} from "@angular/router";
 import {NgClass, NgIf, NgOptimizedImage} from "@angular/common";

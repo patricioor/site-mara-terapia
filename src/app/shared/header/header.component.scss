@@ -63,7 +63,7 @@
     background-color: #f0e6df;
 
     section {
-      .desktop-menu {
+      .mobile-menu {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -106,7 +106,7 @@
         }
       }
 
-      .mobile-menu {
+      .desktop-menu {
         visibility: hidden;
         height: 0;
         width: 0;
