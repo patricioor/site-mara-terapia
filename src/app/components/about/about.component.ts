@@ -69,14 +69,14 @@ export class AboutComponent implements OnInit {
 
   async executarLoopAnos(): Promise<void> {
     while (this.fimLoopAnos) {
-      if (this.anosAtendimento < 18) this.anosAtendimento++;
-      if (this.anosAtendimento == 18) this.fimLoopAnos = false;
-      await this.delayAction(81);
+      if (this.anosAtendimento < 19) this.anosAtendimento++;
+      if (this.anosAtendimento == 19) this.fimLoopAnos = false;
+      await this.delayAction(90);
     }
   }async executarLoopHoras(): Promise<void> {
     while (this.fimLoopHoras) {
-      if (this.horasAtendimento < 10) this.horasAtendimento++;
-      if (this.horasAtendimento == 10) this.fimLoopHoras = false;
+      if (this.horasAtendimento < 12) this.horasAtendimento++;
+      if (this.horasAtendimento == 12) this.fimLoopHoras = false;
       await this.delayAction(150);
     }
   }
