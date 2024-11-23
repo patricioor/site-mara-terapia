@@ -6,6 +6,7 @@ import {TravasMentaisComponent} from "./components/service/travas-mentais/travas
 import {AboutMeComponent} from "./components/about-me/about-me.component";
 
 export const routes: Routes = [
+  { path: '', component: AboutComponent },
   { path: 'about', component: AboutComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'services/trg', component: TrgComponent},
